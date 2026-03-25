@@ -1,7 +1,9 @@
 class Beep < Formula
   desc "Activity sonifier CLI"
   homepage "https://github.com/jamestomasino/beep"
+  url "https://github.com/jamestomasino/beep/releases/download/v0.1.6/beep-v0.1.6-linux-x86_64.tar.gz"
   version "0.1.6"
+  sha256 "0f54336068a49e8e1cc6d223914c8d72f4408ac2100a8a4022a2547d156bc68f"
 
   on_macos do
     on_arm do
@@ -15,9 +17,8 @@ class Beep < Formula
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/jamestomasino/beep/releases/download/v#{version}/beep-v#{version}-linux-x86_64.tar.gz"
-      sha256 "0f54336068a49e8e1cc6d223914c8d72f4408ac2100a8a4022a2547d156bc68f"
+    on_arm do
+      disable! date: "2026-03-25", because: :unsupported
     end
   end
 
