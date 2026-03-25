@@ -1,15 +1,15 @@
 class Beep < Formula
   desc "Activity sonifier CLI"
   homepage "https://github.com/jamestomasino/beep"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jamestomasino/beep/releases/download/v#{version}/beep-v#{version}-darwin-arm64.tar.gz"
-      sha256 "ab311f22614e7a1f0a4a19e43241833231a9b3d324d21f75b430427ac89f8320"
+      sha256 "f29db6536f1ee6fb6bdfe84a419ea172fa36edb40bee7716a276c1618b594d81"
     else
       url "https://github.com/jamestomasino/beep/releases/download/v#{version}/beep-v#{version}-darwin-x86_64.tar.gz"
-      sha256 "a9a2ade3d1468907111922c76523451c6e70e61e775d84f52ec45d7a07a305ea"
+      sha256 "0b568d356d58a550c00dcaf3b638c3d9abc09c0aa5641e38c2c7e9c938758201"
     end
   end
 
