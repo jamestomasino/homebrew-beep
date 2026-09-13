@@ -1,19 +1,19 @@
 class Beep < Formula
   desc "Activity sonifier CLI"
   homepage "https://github.com/jamestomasino/beep"
-  url "https://github.com/jamestomasino/beep/releases/download/v0.1.8/beep-v0.1.8-linux-x86_64.tar.gz"
-  version "0.1.8"
-  sha256 "b9845bc5816b199892e453c53b26bd00cc0561830458c56b63d52134f4e00adc"
+  url "https://github.com/jamestomasino/beep/releases/download/v1.0.0/beep-v1.0.0-linux-x86_64.tar.gz"
+  version "1.0.0"
+  sha256 "c8f540db7b7a317f8290a4f502e452d80aea2bd9946bf4d1aa0573e6efc0b38d"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/jamestomasino/beep/releases/download/v#{version}/beep-v#{version}-darwin-arm64.tar.gz"
-      sha256 "90bf070bfe80b3b79d9ec19c824a21b3560bd0cd2a311ee2bd8e3fad160c3e0e"
+      sha256 "493305be1e060dd4aeb6770248b4fbac661b7febb394df5835e35fdf57452f96"
     end
     on_intel do
       url "https://github.com/jamestomasino/beep/releases/download/v#{version}/beep-v#{version}-darwin-x86_64.tar.gz"
-      sha256 "1f2f74dc340616837687b7d675a5f27513a0953d425f655c78f5a1ba330e4450"
+      sha256 "590a3f3f4c4a174f216abeb4474f8be26ccb7aa5b889566f9b4e5622a9e10972"
     end
   end
 
