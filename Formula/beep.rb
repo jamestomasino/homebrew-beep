@@ -2,7 +2,6 @@ class Beep < Formula
   desc "Activity sonifier CLI"
   homepage "https://github.com/jamestomasino/beep"
   url "https://github.com/jamestomasino/beep/releases/download/v1.1.1/beep-v1.1.1-linux-x86_64.tar.gz"
-  version "1.1.1"
   sha256 "c8f540db7b7a317f8290a4f502e452d80aea2bd9946bf4d1aa0573e6efc0b38d"
   license "MIT"
 
